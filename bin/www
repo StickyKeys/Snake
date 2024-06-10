@@ -5,7 +5,7 @@
  */
 
 var app = require('../app');
-var debug = require('debug')('snake-app:server');
+var debug = require('debug')('securitytesting:server');
 var http = require('http');
 
 /**
@@ -13,6 +13,7 @@ var http = require('http');
  */
 
 var port = normalizePort(process.env.PORT || '3000');
+console.log(`PORT: ${port}`);
 app.set('port', port);
 
 /**
